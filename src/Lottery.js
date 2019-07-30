@@ -38,7 +38,7 @@ export default class Lottery extends Component {
         return (
             <section className="Lottery">
                 <h1>{this.props.title}</h1>
-                <div>
+                <div style={{ display: "flex", justifyContent: "center" }}>
                     {this.state.nums.map(n => (
                         <Ball num={n} />
                     ))}
